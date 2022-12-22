@@ -39,7 +39,12 @@ data attributes
 | total_amount | sales invoice's amount to be paid by the user | amount
 
 
-* Note : reference_name & total_amount were retrieved in a previous api sent before :  GET {base_url}/api/Sales Invoice 
+ #f03c15 Note : reference_name & total_amount were retrieved in a previous api sent before :  GET {base_url}/api/Sales Invoice 
+ 
+ 
+```diff
+- Note : reference_name & total_amount were retrieved in a previous api sent before :  GET {base_url}/api/Sales Invoice
+```
 
 
 * Sample 
