@@ -30,6 +30,13 @@ data attributes
 | paid_amount | it is the amount he paid throug fawry | amount |
 | received_amount | it is the same value as paid_amount | amount |
 | source_exchange_rate | exchange rate of the currency | string |
+| paid_to | to be determined | ttt |
+| reference_no | it will be the transaction ID or any reference number of Fawry successfull Response | fawry ref |
+| reference_date | date of the transaction in iso format | YYYY-MM-DD |
+| references | a list of sales invoces references | list
+| reference_doctype | sales invoice reference | Sales Invoice |
+| reference_name | Invoice Name | Text |
+| total_amount | sales invoice's amount to be paid by the user | amount
 
 
 | Key  | Description | 
