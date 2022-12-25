@@ -1,5 +1,12 @@
+# FLOW Diagram
+![fawry](https://user-images.githubusercontent.com/102908588/209472125-7d1eda00-9c80-4897-9ff2-9e2b3c406c5e.jpg)
+
+
+
 # Payment-API-Fawry-
 API DOC 
+
+
 
 
 
