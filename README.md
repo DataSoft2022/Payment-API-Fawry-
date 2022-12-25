@@ -2,9 +2,68 @@
 API DOC 
 
 
-# Payment Entry API 
 
-Sending Fawry Successful Payment Response to Payment Entry
+# Payment Request API  [ GET] Request 
+
+Get all Invoices from Payment Request Document 
+
+* GET  /Payment Request 
+
+* Method : GET
+
+* url :  {{base_url}}/api/resource/Payment Entry
+
+* body : {form-data}
+
+| key | Value |
+| ---- | ----- |
+| filters | [["party", "=", "1710"],["status","=","Requested"]] |
+| fields | ["status","party","reference_doctype","reference_name","currency","grand_total"] |
+
+**filters** : on which the data will be filtered
+
+**Note** : **"party"** is the only variable in this API , the rest are **FIXED**
+
+**fields** : data fields on the response 
+
+
+* Sample Request 
+
+```
+
+curl --location --request GET '{{base_url}}/api/resource/Payment Request' \
+--header 'Authorization: token apiKey:apiSecret ' \
+--header 'Cookie: full_name=Guest; sid=Guest; system_user=no; user_id=Guest; user_image=' \
+--form 'filters="[[\"party\", \"=\", \"1710\"],[\"status\",\"=\",\"Requested\"]]"' \
+--form 'fields="[\"status\",\"party\",\"reference_doctype\",\"reference_name\",\"currency\",\"grand_total\"]"'
+
+```
+
+* Sample Response 
+
+```
+{
+    "data": [
+        {
+            "status": "Requested",
+            "party": "1710",
+            "reference_doctype": "Sales Invoice",
+            "reference_name": "INV-2022-01299",
+            "currency": "EGP",
+            "grand_total": 500.0
+        }
+    ]
+}
+
+```
+
+
+
+
+
+# Payment Entry API [POST]
+
+Sending Fawry Successful Payment from Payment Request Response to Payment Entry
 
 * POST /Payment Entry 
 
@@ -177,5 +236,8 @@ curl --location --request POST 'http:{{base_url}}/api/resource/Payment Entry' \
     }
 }
 ```
+
+
+
 
 
