@@ -24,6 +24,8 @@ Get all Invoices from Payment Request Document
 
 **Note** : **"party"** is the only variable in this API , the rest are **FIXED**
 
+**party** : It Is Member ID that will retrieve all the invoices belongs to this Member ID to pay it via Fawry 
+
 **fields** : data fields on the response 
 
 
