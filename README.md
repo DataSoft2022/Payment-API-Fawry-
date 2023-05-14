@@ -93,6 +93,7 @@ data attributes
 | payment_type | Type of Payment, it will be **FIXED**  | Receive |
 | posting_date  | posting date in ISO Format  | YYYY-MM-DD |
 | party_type | party type of the member is Customer, it will be **FIXED** | Customer |
+| mode_of_payment | it will be fawry | فوري
 | party | it is member's Number | number |
 | part_name | it is member's name | member's name |
 | paid_amount | it is the amount he paid throug fawry | amount |
