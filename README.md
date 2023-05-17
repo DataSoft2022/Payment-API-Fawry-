@@ -102,6 +102,8 @@ data attributes
 | paid_to | It will be **FIXED** | فوري كاش - TC |
 | reference_no | it will be the transaction ID or any reference number of Fawry successfull Response | fawry ref |
 | reference_date | date of the transaction in iso format | YYYY-MM-DD |
+| mode_of_payment_per_checks | it will be **FIXED** Value | فوري |
+| docstatus | it's **Submitted** status it will be **FIXED** Value | 1 | 
 | references | a list of sales invoces references | list
 | reference_doctype | sales invoice reference it will be **FIXED** | Sales Invoice |
 | reference_name | Invoice Name | Text |
