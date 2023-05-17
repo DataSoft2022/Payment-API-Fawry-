@@ -96,8 +96,8 @@ data attributes
 | mode_of_payment | it will be fawry it will be **FIXED** | فوري
 | party | it is member's Number | number |
 | part_name | it is member's name | member's name |
-| paid_amount | it is the amount he paid throug fawry | amount |
-| received_amount | it is the same value as paid_amount | amount |
+| paid_amount | it is the amount he paid throug fawry FLOAT| amount |
+| received_amount | it is the same value as paid_amount FLOAT | amount |
 | source_exchange_rate | exchange rate of the currency it will be 1 **FIXED** | "1" |
 | paid_to | It will be **FIXED** | فوري كاش - TC |
 | reference_no | it will be the transaction ID or any reference number of Fawry successfull Response | fawry ref |
@@ -108,7 +108,8 @@ data attributes
 | reference_doctype | sales invoice reference it will be **FIXED** | Sales Invoice |
 | reference_name | Invoice Name | Text |
 | total_amount | sales invoice's amount to be paid by the user | amount
-
+| allocated_amount | same as total amount FLOAT | amount
+| outstanding_amount | same as total amount FLOAT | amount
 
  #f03c15 Note : reference_name & total_amount were retrieved in a previous api sent before :  GET {base_url}/api/Sales Invoice 
  
