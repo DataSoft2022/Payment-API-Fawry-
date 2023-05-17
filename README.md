@@ -98,7 +98,7 @@ data attributes
 | part_name | it is member's name | member's name |
 | paid_amount | it is the amount he paid throug fawry | amount |
 | received_amount | it is the same value as paid_amount | amount |
-| source_exchange_rate | exchange rate of the currency | string |
+| source_exchange_rate | exchange rate of the currency it will be 1 **FIXED** | "1" |
 | paid_to | It will be **FIXED** | فوري كاش - TC |
 | reference_no | it will be the transaction ID or any reference number of Fawry successfull Response | fawry ref |
 | reference_date | date of the transaction in iso format | YYYY-MM-DD |
