@@ -103,7 +103,7 @@ data attributes
 | reference_no | it will be the transaction ID or any reference number of Fawry successfull Response | fawry ref |
 | reference_date | date of the transaction in iso format | YYYY-MM-DD |
 | references | a list of sales invoces references | list
-| reference_doctype | sales invoice reference | Sales Invoice |
+| reference_doctype | sales invoice reference it will be **FIXED** | Sales Invoice |
 | reference_name | Invoice Name | Text |
 | total_amount | sales invoice's amount to be paid by the user | amount
 
